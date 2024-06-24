@@ -14,6 +14,7 @@ window.addEventListener("mousemove", function (e) {
 
 const weaponinfo = [
   {
+    number: 0,
     name: "絶対否定の剣",
     subname: "Sword of Repudiation",
     srclv1: "images/lv1/l1.webp",
@@ -25,6 +26,7 @@ const weaponinfo = [
       "以「終末」为目标，希望毁灭世界的孤高研究者，在智慧的尽头创造出了令人畏惧的产物。被玲珑的光芒点缀的瞬间剑闪，否定万物，赐予了使用者荣耀和天佑。",
   },
   {
+    number: 1,
     name: "永遠拒絶の剣",
     subname: "Sword of Renunciation",
     srclv1: "images/lv1/l2.webp",
@@ -36,6 +38,7 @@ const weaponinfo = [
       "力量带来毁灭，意志滋生怨恨，祈愿有吉凶。天赐的光辉驱逐了远方的黑暗，拒绝理性追求极致的虚无中，将永恒的大义强加于自身。",
   },
   {
+    number: 2,
     name: "絶対否定の槍",
     subname: "Spear of Repudiation",
     srclv1: "images/lv1/l3.webp",
@@ -47,6 +50,7 @@ const weaponinfo = [
       "以「終末」为目标，希望毁灭世界的孤高研究者，在智慧的尽头创造出了令人畏惧的产物。震动天空贯穿罗刹的旋风一闪，否定万物，赐予了使用者坚不可摧的勇武。",
   },
   {
+    number: 3,
     name: "永遠拒絶の槍",
     subname: "Spear of Renunciation",
     srclv1: "images/lv1/l4.webp",
@@ -58,6 +62,7 @@ const weaponinfo = [
       "力量带来毁灭，意志滋生怨恨，祈愿有吉凶。翱翔于天空的强风为生命之息带来平静，拒绝理性追求极致的虚无中，铭刻着不屈的自尊。",
   },
   {
+    number: 4,
     name: "絶対否定の大鎌",
     subname: "Scythe of Repudiation",
     srclv1: "images/lv1/l5.webp",
@@ -69,6 +74,7 @@ const weaponinfo = [
       "以「終末」为目标，希望毁灭世界的孤高研究者，在智慧的尽头创造出了令人畏惧的产物。能够割断熊熊业火的雄浑大刃，否定万物，赋予了使用者坚毅之气。",
   },
   {
+    number: 5,
     name: "永遠拒絶の大鎌",
     subname: "Scythe of Renunciation",
     srclv1: "images/lv1/l6.webp",
@@ -80,6 +86,7 @@ const weaponinfo = [
       "力量带来毁灭，意志滋生怨恨，祈愿有吉凶。红莲烈焰焚尽无数血肉和空气，拒绝理性追求极致的虚无中，激情在内心深处燃起。",
   },
   {
+    number: 6,
     name: "絶対否定の杖",
     subname: "Staff of Repudiation",
     srclv1: "images/lv1/l7.webp",
@@ -91,6 +98,7 @@ const weaponinfo = [
       "以「終末」为目标，希望毁灭世界的孤高研究者，在智慧的尽头创造出了令人畏惧的产物。梦想着永恒的繁荣不断的祈祷，否定万物，赋予了使用者高尚才智。",
   },
   {
+    number: 7,
     name: "永遠拒絶の杖",
     subname: "Staff of Renunciation",
     srclv1: "images/lv1/l8.webp",
@@ -102,6 +110,7 @@ const weaponinfo = [
       "力量带来毁灭，意志滋生怨恨，祈愿有吉凶。廉洁的誓言以慈悲之心消除罪孽，拒绝理性追求极致的虚无中，通向高远纯净的福地。",
   },
   {
+    number: 8,
     name: "絶対否定の竪琴",
     subname: "Harp of Repudiation",
     srclv1: "images/lv1/l9.webp",
@@ -113,6 +122,7 @@ const weaponinfo = [
       "以「終末」为目标，希望毁灭世界的孤高研究者，在智慧的尽头创造出了令人畏惧的产物。渴望永恒的乐土的壮丽旋律，否定万物，赋予了使用者黎明的意志。",
   },
   {
+    number: 9,
     name: "永遠拒絶の竪琴",
     subname: "Harp of Renunciation",
     srclv1: "images/lv1/l10.webp",
@@ -124,6 +134,7 @@ const weaponinfo = [
       "力量带来毁灭，意志滋生怨恨，祈愿有吉凶。没有秩序的旋律引领着我们走向无尽的孤独，拒绝理性追求极致的虚无中，蕴含着坚定而深刻的智慧。",
   },
   {
+    number: 10,
     name: "絶対否定の太刀",
     subname: "Katana of Repudiation",
     srclv1: "images/lv1/l11.webp",
@@ -135,6 +146,7 @@ const weaponinfo = [
       "以「終末」为目标，希望毁灭世界的孤高研究者，在智慧的尽头创造出了令人畏惧的产物。映出无底深渊黑暗的幽冥一刀，否定万物，赋予了使用者永恒的信念。",
   },
   {
+    number: 11,
     name: "永远拒绝之太刀",
     subname: "Katana of Renunciation",
     srclv1: "images/lv1/l12.webp",
@@ -156,6 +168,9 @@ const popsubtitle = document.querySelector(".popsubtitle");
 const popinfo = document.querySelector(".popinfo");
 const popinfoch = document.querySelector(".popinfoch");
 
+const rightbtn = document.querySelector(".rightbtn");
+const leftbtn = document.querySelector(".leftbtn");
+
 item.forEach((pro) => {
   pro.addEventListener("click", (e) => {
     // console.log(e.target.value);
@@ -170,7 +185,8 @@ item.forEach((pro) => {
     popsubtitle.innerHTML = weaponinfo[imgnumber].subname;
     popinfo.innerHTML = weaponinfo[imgnumber].infojp;
     popinfoch.innerHTML = weaponinfo[imgnumber].infoch;
-
+    rightbtn.dataset.number = weaponinfo[imgnumber].number;
+    leftbtn.dataset.number = weaponinfo[imgnumber].number;
     popbg.classList.toggle("popbgclose");
     popclose.classList.toggle("closebtnhide");
     popimg.classList.toggle("popimghide");
@@ -178,6 +194,66 @@ item.forEach((pro) => {
   });
 });
 
+// ------------arrow btn-------------
+
+rightbtn.addEventListener("click", (e) => {
+  let number = Number(e.target.dataset.number);
+  let newnum = number + 1;
+  if (newnum >= 12) {
+    let newnum = 0;
+
+    poptitle.innerHTML = weaponinfo[newnum].name;
+    popsubtitle.innerHTML = weaponinfo[newnum].subname;
+    popinfo.innerHTML = weaponinfo[newnum].infojp;
+    popinfoch.innerHTML = weaponinfo[newnum].infoch;
+    rightbtn.dataset.number = weaponinfo[newnum].number;
+    leftbtn.dataset.number = weaponinfo[newnum].number;
+    popimg1.src = weaponinfo[newnum].srclv1;
+    popimg2.src = weaponinfo[newnum].srclv2;
+    popimg3.src = weaponinfo[newnum].srclv3;
+    // console.log(newnum);
+  } else {
+    popimg1.src = weaponinfo[newnum].srclv1;
+    popimg2.src = weaponinfo[newnum].srclv2;
+    popimg3.src = weaponinfo[newnum].srclv3;
+    poptitle.innerHTML = weaponinfo[newnum].name;
+    popsubtitle.innerHTML = weaponinfo[newnum].subname;
+    popinfo.innerHTML = weaponinfo[newnum].infojp;
+    popinfoch.innerHTML = weaponinfo[newnum].infoch;
+    rightbtn.dataset.number = weaponinfo[newnum].number;
+    leftbtn.dataset.number = weaponinfo[newnum].number;
+    // console.log(newnum);
+  }
+});
+leftbtn.addEventListener("click", (e) => {
+  let number = Number(e.target.dataset.number);
+  let newnum = number - 1;
+  // console.log(number);
+  if (newnum < 0) {
+    let newnum = 11;
+    popimg1.src = weaponinfo[newnum].srclv1;
+    popimg2.src = weaponinfo[newnum].srclv2;
+    popimg3.src = weaponinfo[newnum].srclv3;
+    poptitle.innerHTML = weaponinfo[newnum].name;
+    popsubtitle.innerHTML = weaponinfo[newnum].subname;
+    popinfo.innerHTML = weaponinfo[newnum].infojp;
+    popinfoch.innerHTML = weaponinfo[newnum].infoch;
+    rightbtn.dataset.number = weaponinfo[newnum].number;
+    leftbtn.dataset.number = weaponinfo[newnum].number;
+    // console.log(newnum);
+  } else {
+    popimg1.src = weaponinfo[newnum].srclv1;
+    popimg2.src = weaponinfo[newnum].srclv2;
+    popimg3.src = weaponinfo[newnum].srclv3;
+    poptitle.innerHTML = weaponinfo[newnum].name;
+    popsubtitle.innerHTML = weaponinfo[newnum].subname;
+    popinfo.innerHTML = weaponinfo[newnum].infojp;
+    popinfoch.innerHTML = weaponinfo[newnum].infoch;
+    rightbtn.dataset.number = weaponinfo[newnum].number;
+    leftbtn.dataset.number = weaponinfo[newnum].number;
+    // console.log(newnum);
+  }
+});
 // -----------pop EVOLUTION set-------------
 const evbtn = document.querySelector(".evbtn");
 const weaponstate = document.querySelector(".weaponstate");

@@ -356,6 +356,63 @@ body::before {
   color: aqua;
   transition: none;
 }
+.popbg .popinner .popimg .rightbtn {
+  width: 20px;
+  height: 30px;
+  background-image: url("/images/rightarrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 45%;
+  position: absolute;
+  top: 45%;
+  right: 15px;
+}
+.popbg .popinner .popimg .rightbtn::after {
+  content: "";
+  width: 20px;
+  height: 30px;
+  background-image: url("/images/rightarrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: 1s arrowlinear infinite;
+}
+.popbg .popinner .popimg .leftbtn {
+  width: 20px;
+  height: 30px;
+  background-image: url("/images/leftarrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 45%;
+  left: 15px;
+}
+.popbg .popinner .popimg .leftbtn::after {
+  content: "";
+  width: 20px;
+  height: 30px;
+  background-image: url("/images/leftarrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: 1s arrowlinear infinite;
+}
+@keyframes arrowlinear {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
 .popbg .popinner .poptext {
   width: 50%;
   /* min-width: 150px; */
