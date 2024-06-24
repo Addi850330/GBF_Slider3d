@@ -231,6 +231,15 @@ popclose.addEventListener("click", (event) => {
   popimg1.classList.remove("imghide");
   popimg2.classList.add("imghide");
   popimg3.classList.add("imghide");
+
+  popimg1.src = "";
+  popimg2.src = "";
+  popimg3.src = "";
+
+  poptitle.innerHTML = "";
+  popsubtitle.innerHTML = "";
+  popinfo.innerHTML = "";
+  popinfoch.innerHTML = "";
 });
 
 // ----------------title set--------------------
