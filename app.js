@@ -1,7 +1,8 @@
 const loadAnime = document.querySelector(".loadAnime");
 const loading = document.querySelector(".loading");
 loadAnime.addEventListener("animationend", () => {
-  loading.style = "transition: all .5s ease; opacity:0; opinter-events: none";
+  loading.classList.add("loadinghide");
+  // loading.style = "transition: all .5s ease; opacity:0; opinter-events: none";
 });
 
 // --------cursor set-------

@@ -45,6 +45,11 @@ body::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+}
+.loadinghide {
+  opacity: 0;
+  pointer-events: none;
 }
 .loading .loadAnime {
   font-size: 1.5rem;
