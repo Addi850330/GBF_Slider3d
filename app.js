@@ -1,3 +1,9 @@
+const loadAnime = document.querySelector(".loadAnime");
+const loading = document.querySelector(".loading");
+loadAnime.addEventListener("animationend", () => {
+  loading.style = "transition: all .5s ease; opacity:0; opinter-events: none";
+});
+
 // --------cursor set-------
 let cursor = document.getElementById("myCursor");
 let circle = document.getElementById("circlepoint");

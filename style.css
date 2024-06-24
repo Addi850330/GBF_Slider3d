@@ -34,6 +34,41 @@ body::before {
   background-position: top center;
   pointer-events: none;
 }
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #25283b;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading .loadAnime {
+  font-size: 1.5rem;
+  font-family: Poppins;
+  color: #fff;
+  animation: 5s loadinganime;
+}
+@keyframes loadinganime {
+  0% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
 .curseset {
   width: 100%;
   height: 100vh;
