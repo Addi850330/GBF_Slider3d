@@ -206,9 +206,13 @@ item.forEach((pro) => {
 rightbtn.addEventListener("click", (e) => {
   let number = Number(e.target.dataset.number);
   let newnum = number + 1;
+  popimg1.classList.remove("imghide");
+  popimg2.classList.add("imghide");
+  popimg3.classList.add("imghide");
+  limitstar.classList.add("limithide");
+  weaponstate.innerHTML = "INITIAL STATUS";
   if (newnum >= 12) {
     let newnum = 0;
-
     poptitle.innerHTML = weaponinfo[newnum].name;
     popsubtitle.innerHTML = weaponinfo[newnum].subname;
     popinfo.innerHTML = weaponinfo[newnum].infojp;
@@ -236,6 +240,11 @@ leftbtn.addEventListener("click", (e) => {
   let number = Number(e.target.dataset.number);
   let newnum = number - 1;
   // console.log(number);
+  popimg1.classList.remove("imghide");
+  popimg2.classList.add("imghide");
+  popimg3.classList.add("imghide");
+  limitstar.classList.add("limithide");
+  weaponstate.innerHTML = "INITIAL STATUS";
   if (newnum < 0) {
     let newnum = 11;
     popimg1.src = weaponinfo[newnum].srclv1;

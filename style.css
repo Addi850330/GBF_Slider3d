@@ -368,7 +368,7 @@ body::before {
   position: absolute;
   top: -30px;
   left: -10px;
-  transition: 0.3s;
+  transition: 0.2s;
   opacity: 1;
 }
 .popbg .popinner .popimg .imghide {
