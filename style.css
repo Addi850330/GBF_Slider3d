@@ -131,7 +131,7 @@ body::before {
   object-fit: cover;
   opacity: 0.8;
   transition: 0.2s;
-  background-image: url("/images/imgbg.svg");
+  background-image: url("./images/imgbg.svg");
   background-size: 0% 0%;
   background-repeat: no-repeat;
 }
@@ -322,7 +322,7 @@ body::before {
   flex-wrap: wrap;
 }
 .popbg .popinner .popimg {
-  background-image: url("/images/popinfobg.png");
+  background-image: url("./images/popinfobg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 50%;
@@ -346,7 +346,7 @@ body::before {
 #limitstar {
   width: 30px;
   height: 30px;
-  background-image: url("/images/limit.png");
+  background-image: url("./images/limit.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: absolute;
@@ -399,7 +399,7 @@ body::before {
 .popbg .popinner .popimg .rightbtn {
   width: 20px;
   height: 30px;
-  background-image: url("/images/rightarrow.svg");
+  background-image: url("./images/rightarrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 45%;
@@ -411,7 +411,7 @@ body::before {
   content: "";
   width: 20px;
   height: 30px;
-  background-image: url("/images/rightarrow.svg");
+  background-image: url("./images/rightarrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
@@ -423,7 +423,7 @@ body::before {
 .popbg .popinner .popimg .leftbtn {
   width: 20px;
   height: 30px;
-  background-image: url("/images/leftarrow.svg");
+  background-image: url("./images/leftarrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -434,7 +434,7 @@ body::before {
   content: "";
   width: 20px;
   height: 30px;
-  background-image: url("/images/leftarrow.svg");
+  background-image: url("./images/leftarrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -507,7 +507,7 @@ body::before {
   position: absolute;
   border: none;
   background-color: transparent;
-  background-image: url("/images/closebtn.png");
+  background-image: url("./images/closebtn.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   top: 5px;
