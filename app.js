@@ -3,6 +3,7 @@ const loading = document.querySelector(".loading");
 loadAnime.addEventListener("animationend", () => {
   loading.classList.add("loadinghide");
   // loading.style = "transition: all .5s ease; opacity:0; opinter-events: none";
+  textset();
 });
 
 // --------cursor set-------
@@ -342,7 +343,7 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let interval = null;
 const text = document.querySelector(".herotitle");
 
-window.addEventListener("load", (event) => {
+const textset = function () {
   let iteration = 0;
   clearInterval(interval);
   interval = setInterval(() => {
@@ -363,5 +364,5 @@ window.addEventListener("load", (event) => {
 
     iteration += 1 / 3;
   }, 30);
-});
+};
 // ----------------title set end--------------------
