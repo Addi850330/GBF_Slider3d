@@ -1,5 +1,16 @@
-@import url("https://fonts.cdnfonts.com/css/ica-rubrik-black");
-@import url("https://fonts.cdnfonts.com/css/poppins");
+@font-face {
+  font-family: "IcaRubrik";
+  src: url("./fonts/ICARubrikBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +19,8 @@
 body {
   background-color: #d2d2d2;
 
-  background-image: repeating-linear-gradient(
+  background-image:
+    repeating-linear-gradient(
       to right,
       transparent 0 100px,
       #1730d322 100px 101px
@@ -53,7 +65,7 @@ body::before {
 }
 .loading .loadAnime {
   font-size: 1.5rem;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   animation: 5s loadinganime;
 }
@@ -80,10 +92,15 @@ body::before {
   position: fixed;
   top: 0;
   left: 0;
-
   overflow: hidden;
   pointer-events: none;
   z-index: 9;
+}
+#myCursor {
+  transition: transform 0.3s ease;
+}
+#circlepoint {
+  transition: transform 0.3s ease;
 }
 .banner {
   width: 100%;
@@ -148,7 +165,7 @@ body::before {
   left: -20px;
   width: 190px;
   height: 30px;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   transition: 0.3s;
   pointer-events: none;
 }
@@ -182,7 +199,7 @@ body::before {
   z-index: 1;
 }
 .banner .content h1 {
-  font-family: "ICA Rubrik";
+  font-family: "IcaRubrik", sans-serif;
   font-size: 16em;
   line-height: 1em;
   color: #25283b;
@@ -197,7 +214,7 @@ body::before {
   color: transparent;
 }
 .banner .content .author {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   text-align: right;
   max-width: 200px;
   margin-right: 40px;
@@ -334,7 +351,7 @@ body::before {
 }
 
 .popbg .popinner .popimg .weaponstate {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 3rem;
   position: absolute;
   bottom: 70px;
@@ -457,7 +474,7 @@ body::before {
   width: 50%;
   /* min-width: 150px; */
   padding: 0px 0px 0px 20px;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   opacity: 1;
   transition: 0.4s;
   cursor: default;
@@ -533,7 +550,9 @@ body::before {
   z-index: 9;
   border: 1px rgb(186, 173, 255) solid;
 
-  box-shadow: rgb(118, 118, 250) 0px 0px 16px, rgba(118, 118, 250) 0px 0px 24px,
+  box-shadow:
+    rgb(118, 118, 250) 0px 0px 16px,
+    rgba(118, 118, 250) 0px 0px 24px,
     rgba(118, 118, 250) 0px 0px 56px;
 }
 #circlepoint {
@@ -543,7 +562,9 @@ body::before {
   border-radius: 50%;
   position: absolute;
   transition-duration: 0.15s;
-  box-shadow: rgb(118, 118, 250) 0px 0px 16px, rgba(118, 118, 250) 0px 0px 24px,
+  box-shadow:
+    rgb(118, 118, 250) 0px 0px 16px,
+    rgba(118, 118, 250) 0px 0px 24px,
     rgba(118, 118, 250) 0px 0px 56px;
   pointer-events: none;
   z-index: 9;
